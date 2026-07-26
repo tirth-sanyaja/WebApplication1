@@ -1,0 +1,10 @@
+## Build outputs
+bin/
+obj/
+
+## Visual Studio cache and settings
+.vs/
+*.user
+
+## NuGet packages
+packages/
