@@ -14,6 +14,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <!--- MY ENROLLMENT NUMBER  & NAME-->
+        <asp:Label ID="lblName" runat="server" 
+                   Text="24SOECE11081 - SANYAJA TIRTH KALPESHBHAI"></asp:Label>
+        <br /><br />
         <div style="color: #000000; margin-left: 40px; background-color: #FFFFFF;">
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Login Form<br />
@@ -37,6 +41,7 @@
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
+            <br />
             <br />
 &nbsp;&nbsp;&nbsp;
             <br />
@@ -78,7 +83,7 @@
             <br />
             <br />
             <br />
-            B<br />
+            <br />
             <br />
             <br />
             <br />
@@ -103,6 +108,18 @@
             </asp:ListBox>
             <br />
             <asp:Label ID="Label5" runat="server" ClientIDMode="AutoID" Text="Label"></asp:Label>
+            <br />
+            <br />
+            file upload control demo<br />
+            <br />
+            <br />
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="upload_btn" runat="server" OnClick="upload_btn_Click" Text="upload" />
+&nbsp;
+            <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
             <br />
             <br />
             <br />

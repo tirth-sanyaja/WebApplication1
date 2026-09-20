@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Console.WriteLine("24SOECE11081-SANYAJA TIRTH KALPESHBHAI");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -120,6 +121,24 @@ namespace WebApplication1
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Label5.Text = "You selected:" +ListBox1.SelectedItem;
+        }
+
+        protected void upload_btn_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+                string path = Server.MapPath("~/Uploads/") + FileUpload1.FileName;
+                string file=FileUpload1.FileName;
+
+                FileUpload1.SaveAs(path);   
+
+                Label6.Text = "File uploaded successfully: " + file;
+
+            }
+            else
+            {
+                Label6.Text = "Please select a file to upload.";
+            }
         }
     }
 }
